@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    margin: 0 auto;
+    width: 750px;
+}
+img {
+    display: block;
+    width: 750px;
+}
+@keyframes arrow_move_to_left {
+    0% { opacity: 0.1;}
+    30% { opacity: 1;}
+    70% { opacity: 1;}
+    100% { opacity: 0.1;transform: translateX(-40px);}
+}
+.right_middle {
+    width: 60px;
+    height:60px;
+    position:absolute;
+    right:10px;
+    top:63px;
+    z-index:200;
+    animation: arrow_move_to_left 2s infinite;
+}

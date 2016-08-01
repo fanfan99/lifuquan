@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  
+  <link href="css/animate.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>泉新手册 - 适用于新入职DA</title>
+  
+<script>
+$('img').on('load', function() {
+    $(this).siblings().removeClass("preload");
+}).each(function() {
+    if(this.complete) $(this).load();
+});
+</script>
+  
+</head>
+<body>
+  <div style='margin:0 auto;width:0px;height:0px;overflow:hidden;'>
+    <img src="img/icon.jpg" width='600'>
+  </div>
+
+  <div class="swiper-container" id="swiper">
+    <div class="swiper-wrapper">
+
+      <!--0-->
+      <div class="swiper-slide">
+        <div class="p1" href="javascript:void(0)" onclick="mySwiper.slideNext();">
+        	<div class="p1-1 tada animated">
+            	<img src="img/01-1-1.png">
+            </div>
+            
+            <div class="p1-2">
+            	<div class="p1-3 bounceInRight animated delay1">
+                	<img src="img/01-2.png">
+                    <img class="right_middle" src="img/arrow.svg">
+                </div>
+            </div>
+        </div>
+
+        
+      </div>
+
+      <!--1-->
+      <div class="swiper-slide">
+        <a href="javascript:void(0)" onclick="mySwiper.slidePrev()"><img src="img/long_page_head.png"></a>
+        <img src="img/02-a.jpg" class="preload bounce animated swiper-lazy "/>
+        <img src="img/02-b.png" class="swiper-lazy"/>
+        <img data-src="img/02-c.png" class="swiper-lazy"/>
+        <img data-src="img/02-d.png" class="swiper-lazy"/>
+        <img data-src="img/02-e.jpg" class="swiper-lazy"/>
+        <img data-src="img/02-f.png" class="swiper-lazy"/>
+        <img data-src="img/long_page_foot.png" usemap="#long_page_foot" class="swiper-lazy"/>
+        <map name="long_page_foot">
+          <area href="javascript:void(0)" onclick="mySwiper.slidePrev();" shape="rect" coords="0,0,375,110">
+          <area href="javascript:void(0)" onclick="mySwiper.slideNext();" shape="rect" coords="375,0,750,110">
+        </map>
+        <img class="right_middle" src="img/arrow.svg">
+      </div>
+
+      <!--2-->
+      <div class="swiper-slide">
+        <img src="img/03-1.png" usemap="#linkmap03-1"/>
+        <map name="linkmap03-1">
+          <area href="javascript:void(0)" onclick="mySwiper.slidePrev();" shape="rect" coords="0,0,750,197">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(3);" shape="rect" coords="100,350,654,446">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(5);" shape="rect" coords="100,626,654,726">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(12);" shape="rect" coords="100,906,654,1006">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(3);" shape="rect" coords="0,1250,247,1332">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(5);" shape="rect" coords="248,1250,502,1332">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(12);" shape="rect" coords="503,1250,750,1332">
+        </map>
+        <img class="right_middle" src="img/arrow.svg">
+      </div>
+
+      <!--3-->
+      <div class="swiper-slide">
+        <img src="img/03-2.png" usemap="#linkmap03-2"/>
+        <map name="linkmap03-2">
+          <area href="javascript:void(0)" onclick="mySwiper.slidePrev();" shape="rect" coords="0,0,750,180">
+          <area href="javascript:void(0)" onclick="mySwiper.slideNext();" shape="rect" coords="0,1068,750,1254">
+          <area href="javascript:void(0)" onclick="mySwiper.slidePrev();" shape="rect" coords="0,1250,247,1332">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(5)" shape="rect" coords="248,1250,502,1332">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(12)" shape="rect" coords="503,1250,750,1332">
+        </map>
+        <img class="right_middle" src="img/arrow.svg" style="top:1135px;">
+      </div>
+
+      <!--4-->
+      <div class="swiper-slide">
+        <a href="javascript:void(0)" onclick="mySwiper.slidePrev()"><img src="img/long_page_head.png"></a>
+        <img src="img/04-a.jpg"/>
+        <img src="img/04-b.png"/>
+        <img data-src="img/04-c.png" class="swiper-lazy"/>
+        <img data-src="img/04-d.png" class="swiper-lazy"/>
+        <img data-src="img/long_page_foot.png" usemap="#long_page_foot" class="swiper-lazy"/>
+        <img class="right_middle" src="img/arrow.svg">
+      </div>
+
+      <!--5-->
+      <div class="swiper-slide">
+        <img src="img/05-1.png" usemap="#linkmap05-1"/>
+        <map name="linkmap05-1">
+          <area href="javascript:void(0)" onclick="mySwiper.slidePrev();" shape="rect" coords="0,0,750,180">
+          <area href="javascript:void(0)" onclick="mySwiper.slideNext();" shape="rect" coords="0,1068,750,1254">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(5)" shape="rect" coords="0,1250,247,1332">
+          <area href="javascript:void(0)" onclick="mySwiper.slideNext();" shape="rect" coords="248,1250,502,1332">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(12)" shape="rect" coords="503,1250,750,1332">
+        </map>
+        <img class="right_middle" src="img/arrow.svg" style="top:1135px;">
+      </div>
+
+      <!--6-->
+      <div class="swiper-slide">
+        <img src="img/05-2.png" usemap="#linkmap05-2"/>
+        <map name="linkmap05-2">
+          <area href="javascript:void(0)" onclick="mySwiper.slidePrev();" shape="rect" coords="0,0,750,197">
+          <area href="javascript:void(0)" onclick="mySwiper.slideNext();" shape="rect" coords="100,275,654,375">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(8)" shape="rect" coords="100,472,654,572">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(9)" shape="rect" coords="100,673,654,773">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(10)" shape="rect" coords="100,873,654,973">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(11)" shape="rect" coords="100,1068,654,1168">
+        </map>
+        <img class="right_middle" src="img/arrow.svg">
+      </div>
+
+      <!--7-->
+      <div class="swiper-slide">
+        <a href="javascript:void(0)" onclick="mySwiper.slidePrev()"><img src="img/long_page_head.png"></a>
+        <img src="img/05-3-a.jpg"/>
+        <img data-src="img/05-3-b.png" class="swiper-lazy"/>
+        <img data-src="img/long_page_foot.png" usemap="#long_page_foot" class="swiper-lazy"/>
+        <img class="right_middle" src="img/arrow.svg">
+      </div>
+
+      <!--8-->
+      <div class="swiper-slide">
+        <a href="javascript:void(0)" onclick="mySwiper.slidePrev()"><img src="img/long_page_head.png"></a>
+        <img src="img/05-4-a.jpg"/>
+        <img src="img/05-4-b.png"/>
+        <img data-src="img/05-4-c.jpg" class="swiper-lazy"/>
+        <img data-src="img/05-4-d.png" class="swiper-lazy"/>
+        <img data-src="img/05-4-e.png" class="swiper-lazy"/>
+        <img data-src="img/05-4-f.png" class="swiper-lazy"/>
+        <img data-src="img/long_page_foot.png" usemap="#long_page_foot" class="swiper-lazy"/>
+        <img class="right_middle" src="img/arrow.svg">
+      </div>
+
+      <!--9-->
+      <div class="swiper-slide">
+        <a href="javascript:void(0)" onclick="mySwiper.slidePrev()"><img src="img/long_page_head.png"></a>
+        <img src="img/05-5-a.jpg"/>
+        <img src="img/05-5-b.png"/>
+        <img data-src="img/05-5-c.jpg" class="swiper-lazy"/>
+        <img data-src="img/05-5-d.png" class="swiper-lazy"/>
+        <img data-src="img/05-5-e.jpg" class="swiper-lazy"/>
+        <img data-src="img/05-5-f.png" class="swiper-lazy"/>
+        <img data-src="img/05-5-g.jpg" class="swiper-lazy"/>
+        <img data-src="img/05-5-h.png" class="swiper-lazy"/>
+        <img data-src="img/long_page_foot.png" usemap="#long_page_foot" class="swiper-lazy"/>
+        <img class="right_middle" src="img/arrow.svg">
+      </div>
+
+      <!--10-->
+      <div class="swiper-slide">
+        <a href="javascript:void(0)" onclick="mySwiper.slidePrev()"><img src="img/long_page_head.png"></a>
+        <img src="img/05-6-a.jpg"/>
+        <img src="img/05-6-b.png"/>
+        <img data-src="img/05-6-c.jpg" class="swiper-lazy"/>
+        <img data-src="img/05-6-d.png" class="swiper-lazy"/>
+        <img data-src="img/05-6-e.jpg" class="swiper-lazy"/>
+        <img data-src="img/05-6-f.png" class="swiper-lazy"/>
+        <img data-src="img/05-6-g.jpg" class="swiper-lazy"/>
+        <img data-src="img/05-6-h.png" class="swiper-lazy"/>
+        <img data-src="img/05-6-i.jpg" class="swiper-lazy"/>
+        <img data-src="img/05-6-j.png" class="swiper-lazy"/>
+        <img data-src="img/05-6-k.png" class="swiper-lazy"/>
+        <img data-src="img/05-6-l.png" class="swiper-lazy"/>
+        <img data-src="img/long_page_foot.png" usemap="#long_page_foot" class="swiper-lazy"/>
+        <img class="right_middle" src="img/arrow.svg">
+      </div>
+
+      <!--11-->
+      <div class="swiper-slide">
+        <a href="javascript:void(0)" onclick="mySwiper.slidePrev()"><img src="img/long_page_head.png"></a>
+        <img src="img/05-7-a.jpg"/>
+        <img src="img/05-7-b.png"/>
+        <img data-src="img/05-7-c.png" class="swiper-lazy"/>
+        <img data-src="img/05-7-d.png" class="swiper-lazy"/>
+        <img data-src="img/05-7-e.jpg" class="swiper-lazy"/>
+        <img data-src="img/05-7-f.png" class="swiper-lazy"/>
+        <img data-src="img/long_page_foot.png" usemap="#long_page_foot" class="swiper-lazy"/>
+        <img class="right_middle" src="img/arrow.svg">
+      </div>
+
+      <!--12-->
+      <div class="swiper-slide">
+        <img src="img/06-1.png" usemap="#linkmap06-1"/>
+        <map name="linkmap06-1">
+          <area href="javascript:void(0)" onclick="mySwiper.slidePrev();" shape="rect" coords="0,0,750,180">
+          <area href="javascript:void(0)" onclick="mySwiper.slideNext();" shape="rect" coords="0,1059,750,1253">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(3);" shape="rect" coords="0,1254,247,1332">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(5);" shape="rect" coords="247,1254,501,1332">
+          <area href="javascript:void(0)" onclick="mySwiper.slideNext();" shape="rect" coords="502,1254,750,1332">
+        </map>
+        <img class="right_middle" src="img/arrow.svg" style="top:1135px;">
+      </div>
+
+      <!--13-->
+      <div class="swiper-slide">
+        <img src="img/06-2.png" usemap="#linkmap06-2"/>
+        <map name="linkmap06-2">
+          <area href="javascript:void(0)" onclick="mySwiper.slidePrev();" shape="rect" coords="0,0,750,197">
+          <area href="javascript:void(0)" onclick="mySwiper.slideNext();" shape="rect" coords="100,350,654,446">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(15);" shape="rect" coords="100,626,654,726">
+          <area href="javascript:void(0)" onclick="mySwiper.slideTo(16);" shape="rect" coords="100,906,654,1006">
+        </map>
+        <img class="right_middle" src="img/arrow.svg">
+      </div>
+
+      <!--14-->
+      <div class="swiper-slide">
+        <a href="javascript:void(0)" onclick="mySwiper.slidePrev()"><img src="img/long_page_head.png"></a>
+        <img src="img/06-3-a.jpg"/>
+        <img src="img/06-3-b.jpg"/>
+        <img data-src="img/06-3-c.png" class="swiper-lazy"/>
+        <img data-src="img/06-3-d.png" class="swiper-lazy"/>
+        <img data-src="img/06-3-e.png" class="swiper-lazy"/>
+        <img data-src="img/06-3-f.png" class="swiper-lazy"/>
+        <img data-src="img/06-3-g.jpg" class="swiper-lazy"/>
+        <img data-src="img/06-3-h.png" class="swiper-lazy"/>
+        <img data-src="img/long_page_foot.png" usemap="#long_page_foot" class="swiper-lazy"/>
+        <img class="right_middle" src="img/arrow.svg">
+      </div>
+
+      <!--15-->
+      <div class="swiper-slide">
+        <a href="javascript:void(0)" onclick="mySwiper.slidePrev()"><img src="img/long_page_head.png"></a>
+        <img src="img/06-4-a.jpg"/>
+        <img src="img/06-4-b.png"/>
+        <img data-src="img/06-4-c.png" class="swiper-lazy"/>
+        <img data-src="img/long_page_foot.png" usemap="#long_page_foot" class="swiper-lazy"/>
+        <img class="right_middle" src="img/arrow.svg">
+      </div>
+
+      <!--16-->
+      <div class="swiper-slide">
+        <a href="javascript:void(0)" onclick="mySwiper.slidePrev()"><img src="img/long_page_head.png"></a>
+        <img src="img/06-5-a.jpg"/>
+        <img src="img/06-5-b.png"/>
+        <img data-src="img/last_page_foot.png" usemap="#long_page_foot" class="swiper-lazy"/>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/swiper.min.js"></script>
+  <script>
+    window.onload=function(){
+      var metaEl = document.querySelector('meta[name="viewport"]');
+
+      dpr = window.devicePixelRatio || 1;
+      scrHeight = window.screen.availHeight;
+//      scale = 1 / dpr;
+      scale = (scrHeight-44) / 1334;
+
+      // 设置viewport，进行缩放，达到高清效果
+      metaEl.setAttribute('content', 'width=device-width, initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale + ',user-scalable=no');
+    };
+
+    var mySwiper = new Swiper ('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: false,
+      autoHeight: true,
+      preloadImages: false,
+      lazyLoading: true,
+      lazyLoadingInPrevNext: true,
+      lazyLoadingInPrevNextAmount: 2,
+      lazyLoadingOnTransitionStart: true,
+//      onSlideChangeEnd: function(swiper) {
+//        window.scrollTo(0, 0);
+//      }
+    });
+  </script>
+
+</body>
+</html>
