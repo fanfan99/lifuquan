@@ -453,8 +453,7 @@ $('img').on('load', function() {
 		  
 
           imagesInView[i] = null;
-          break;
-        }
+        } else break;
       }
     });
       
@@ -482,6 +481,7 @@ $('img').on('load', function() {
       lazyLoadingOnTransitionStart: true,
       onSlideChangeEnd: function(swiper) {
         imagesInView = swiper.wrapper.find('.swiper-slide-active img.preload');
+        $(window).scroll();
       }
 //      onSlideChangeEnd: function(swiper) {
 //        window.scrollTo(0, 0);
