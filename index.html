@@ -289,19 +289,16 @@ $('img').on('load', function() {
         var wh = $(window).height();
         var ws = $(window).scrollTop();
         if( ws > ht + hh - wh ) {
-          /*
           if( !j.hasClass('animated') && !j.hasClass('animated-mirror')) {
             j.addClass('animated');
           }
-          if( j.hasClass('animated') ) {
+          else if( j.hasClass('animated') ) {
             j.removeClass('animated');
             j.addClass('animated-mirror');
           } else if( j.hasClass('animated-mirror')) {
             j.removeClass('animated-mirror');
             j.addClass('animated');
           }
-          */
-          j.addClass('imgborder');
           imagesInView[i] = null;
           break;
         }
