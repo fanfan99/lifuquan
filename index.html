@@ -276,6 +276,22 @@ $('img').on('load', function() {
 
   <script src="js/swiper.min.js"></script>
   <script>
+    var imagesInView = null;
+
+    $(window).scroll(function() {
+      if( !imagesInView || !imagesInView.length ) return;
+      for( i=0; i<imagesInView.length; i++ ) {
+        j = $(imagesInView[i]);
+        var ht = j.offset().top;
+        var hh = j.outerHeight();
+        var wh = $(window).height();
+        var ws = $(window).scrollTop();
+        if( ws > ht + hh - wh ) {
+          j.removeClass('preload');
+        }
+      }
+    });
+      
     window.onload=function(){
       var metaEl = document.querySelector('meta[name="viewport"]');
 
@@ -298,6 +314,9 @@ $('img').on('load', function() {
       lazyLoadingInPrevNext: true,
       lazyLoadingInPrevNextAmount: 2,
       lazyLoadingOnTransitionStart: true,
+      onSlideChangeEnd: function(swiper) {
+        imagesInView = swiper.wrapper.find('.swiper-slide-active img.preload');
+      }
 //      onSlideChangeEnd: function(swiper) {
 //        window.scrollTo(0, 0);
 //      }
