@@ -15,7 +15,6 @@ html, body {
       width: 100%;
     }
     img {
-      display: block;
       max-width: 100%;
     }
     @keyframes arrow_move_to_left {
@@ -98,17 +97,61 @@ html, body {
 	margin: 0 auto;
 }
 
-.preload {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
+.p3 {
+	height: 100%;
+}
+
+.p1-1 {
+	height: 10vh;
 }
 
 .m80 {
 	margin: 80px auto 40px !important;
 }
 
+.m90 {
+	margin: 90px auto 70px !important;
+}
+
 .m30 {
 	margin: 30px auto !important;
+}
+
+.bottom-mn {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.bottom-mn img {
+	width:100%;
+}
+
+.p3-2 {
+	height: 80vh;
+}
+
+.p4-1 {
+	background: url('../img/03-2-1.png') no-repeat bottom center;
+	height: 75%;
+    width: 100%;
+    background-size: 100% auto;
+}
+
+.p5-1 {
+	background: url('../img/05-1-1.png') no-repeat bottom center;
+	height: 75%;
+    width: 100%;
+    background-size: 100% auto;
+}
+
+.p6-1 {
+	background: url('../img/06-1-1.png') no-repeat bottom center;
+	height: 75%;
+    width: 100%;
+    background-size: 100% auto;
+}
+
+.hidden {
+	display: none;
 }
