@@ -152,6 +152,5 @@ html, body {
     background-size: 100% auto;
 }
 
-.hidden {
-	display: none;
-}
+.hidden-load {visibility: hidden;}
+.showing-load {visibility: visible !important;}
