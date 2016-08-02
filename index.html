@@ -500,6 +500,9 @@ $('img').on('load', function() {
       onSlideChangeEnd: function(swiper) {
         imagesInView = swiper.wrapper.find('.swiper-slide-active img.preload');
         $(window).scroll();
+      },
+      onSlideChangeStart: function(swiper) {
+        window.scrollTo(0,0);
       }
 //      onSlideChangeEnd: function(swiper) {
 //        window.scrollTo(0, 0);
