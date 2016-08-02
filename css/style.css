@@ -28,7 +28,7 @@ html, body {
       height: 62px;
       position:absolute;
       right:10px;
-      top: 10vw;
+      top: 8vw;
       z-index:200;
       animation: arrow_move_to_left 2s infinite;
     }
