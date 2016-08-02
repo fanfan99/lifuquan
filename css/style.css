@@ -58,7 +58,7 @@ html, body {
 }
 
 .delay1 {
-	animation-delay: 0.5s;
+	animation-delay: 0.9s;
 }
 
 .delay2 {
@@ -152,5 +152,105 @@ html, body {
     background-size: 100% auto;
 }
 
+.clear {
+	clear: both;
+}
+
+.timeline {
+	width: 90vw;
+	margin: 50px auto 0;
+}
+
+.timeline-1, .timeline-2, .timeline-3 {
+	float: left;
+	width:30vw;
+} 
+
+.m8 {
+	margin-bottom: 8vw !important;
+}
+
 .hidden-load {visibility: hidden;}
 .showing-load {visibility: visible !important;}
+
+
+@-webkit-keyframes slideInLeft2 {
+  from {
+    -webkit-transform: translate3d(-200%, 0, 0);
+    transform: translate3d(-200%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft2 {
+  from {
+    -webkit-transform: translate3d(-200%, 0, 0);
+    transform: translate3d(-200%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft2 {
+  -webkit-animation-name: slideInLeft2;
+  animation-name: slideInLeft2;
+  animation-duration: 0.2s;
+}
+
+@-webkit-keyframes slideInRight2 {
+  from {
+    -webkit-transform: translate3d(200%, 0, 0);
+    transform: translate3d(200%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight2 {
+  from {
+    -webkit-transform: translate3d(200%, 0, 0);
+    transform: translate3d(200%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight2 {
+  -webkit-animation-name: slideInRight2;
+  animation-name: slideInRight2;
+  animation-duration: 0.2s;
+}
+
+
+
+@media only screen and (max-width: 520px) {
+
+.p6-1 {
+    background: url('../img/06-1-1.png') no-repeat top center;
+}
+
+.p4-1 {
+    background: url('../img/03-2-1.png') no-repeat top center;
+}
+
+.p5-1 {
+    background: url('../img/05-1-1.png') no-repeat top center;
+}
+}
